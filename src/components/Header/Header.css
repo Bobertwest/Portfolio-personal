@@ -1,0 +1,134 @@
+@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  padding: 1% 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .btn-header {
+  color: var(--light-text);
+  background-color: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header .btn-header::after {
+  content: "/>";
+  color: #DFFF1E;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header .btn-header::before {
+  content: "<";
+  color: #DFFF1E;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header .btn-nav {
+  background-color: inherit;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  color: var(--light-text);
+}
+
+.header .btn-nav:hover {
+  font-weight: bold;
+  color: var(--hover-button-header);
+}
+
+.header .nav-container {
+  width: 60%;
+}
+
+.header .nav-container .list {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav-container .list .slider {
+  width: 60px;
+  height: 20px;
+  background-color: var(--light-text);
+  border-radius: 14px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav-container .list .slider .btn-slider {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.header .nav-container .list .slider .light {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: var(--light-button);
+  border: var(--light-button-radius);
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.header .nav-container .list .slider .dark {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: var(--dark-button);
+  border: var(--dark-button-radius);
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+@media only screen and (max-width: 980px) {
+  .header .nav-container .list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header .nav-container .list .list-item {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

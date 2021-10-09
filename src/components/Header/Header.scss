@@ -1,0 +1,101 @@
+@import '../../index.css';
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    padding: 1% 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .btn-header {
+        color: var(--light-text);
+        background-color: inherit;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        &::after {
+            content: "/>";
+            color: #DFFF1E;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        &::before {
+            content: "<";
+            color: #DFFF1E;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+    .btn-nav {
+        background-color: inherit;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        transition: all 100ms ease-in-out;
+        color: var(--light-text);
+        &:hover {
+            font-weight: bold;
+            color: var(--hover-button-header);
+        }
+    }
+    .nav-container {
+        width: 60%;
+        .list {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .slider {
+                width: 60px;
+                height: 20px;
+                background-color: var(--light-text);
+                border-radius: 14px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                .btn-slider {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100px;
+                }
+                .light {
+                    transform: translateX(0);
+                    background-color: var(--light-button);
+                    border: var(--light-button-radius);
+                    transition: all 100ms ease-in-out;
+                }
+                .dark {
+                    transform: translateX(50%);
+                    background-color: var(--dark-button);
+                    border: var(--dark-button-radius);
+                    transition: all 100ms ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .header {
+        .nav-container {
+            .list {
+                justify-content: flex-end;
+                .list-item {
+                    display: none;
+                }
+            }
+        }
+    }
+}
