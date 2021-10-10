@@ -54,8 +54,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
   color: var(--light-text);
 }
 
@@ -108,8 +108,8 @@
           transform: translateX(0);
   background-color: var(--light-button);
   border: var(--light-button-radius);
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 .header .nav-container .list .slider .dark {
@@ -117,8 +117,8 @@
           transform: translateX(50%);
   background-color: var(--dark-button);
   border: var(--dark-button-radius);
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 @media only screen and (max-width: 980px) {

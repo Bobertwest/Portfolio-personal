@@ -41,7 +41,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        transition: all 100ms ease-in-out;
+        transition: var(--transition-effect);
         color: var(--light-text);
         &:hover {
             font-weight: bold;
@@ -74,13 +74,13 @@
                     transform: translateX(0);
                     background-color: var(--light-button);
                     border: var(--light-button-radius);
-                    transition: all 100ms ease-in-out;
+                    transition: var(--transition-effect);
                 }
                 .dark {
                     transform: translateX(50%);
                     background-color: var(--dark-button);
                     border: var(--dark-button-radius);
-                    transition: all 100ms ease-in-out;
+                    transition: var(--transition-effect);
                 }
             }
         }

@@ -6,8 +6,8 @@
   background-position-x: right;
   padding: 10% 2%;
   position: relative;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 .portada .titulo {
@@ -33,38 +33,32 @@
   font-weight: 900;
   font-size: 40px;
   letter-spacing: 36px;
-}
-
-.portada .profesionlight {
   color: var(--light-text-secondary);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.portada .profesiondark {
-  color: var(--dark-text);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
 }
 
 .light {
   background-image: url("../../Images/Port.png");
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 .dark {
   background-image: url("../../Images/Port-dark.png");
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 @media only screen and (max-width: 980px) {
   .portada {
     background-size: auto inherit;
     background-position-y: bottom;
+    background-position-x: 80%;
   }
   .portada .titulo {
     font-size: 50px;
   }
   .portada .saludo {
-    margin-top: 90px;
+    margin-top: 50px;
   }
   .portada .profesion {
     letter-spacing: 16px;
@@ -73,6 +67,9 @@
 }
 
 @media only screen and (max-width: 431px) {
+  .portada {
+    padding-bottom: 30%;
+  }
   .portada .profesion {
     letter-spacing: 10px;
     font-size: 20px;

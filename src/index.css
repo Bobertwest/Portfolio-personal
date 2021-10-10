@@ -1,12 +1,13 @@
 :root {
     --light-text: #ffffff;
-    --dark-text: #000000;
+    --dark-text: #444444;
     --light-text-secondary: #FFF500;
     --light-button: #80A3FF;
     --light-button-radius: 3px solid #FFE600;
     --dark-button: #00155F;
     --dark-button-radius: 3px solid #444444;
     --hover-button-header: #00FF85;
+    --transition-effect: all 90ms ease-in-out;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -47,6 +48,6 @@ code {
 
 @media only screen and (max-width: 980px) {
     .container {
-        height: auto;
+        height: 100vh;
     }
 }
