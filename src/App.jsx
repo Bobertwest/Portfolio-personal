@@ -7,6 +7,17 @@ function App() {
     <Context>
       <div className="App">
         <Portada />
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
+        <h1>hola mudno</h1>
       </div>
     </Context>
   );

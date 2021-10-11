@@ -1,9 +1,27 @@
 @import '../../index.css';
-.header {
+.Absolute {
     position: absolute;
+    margin-top: 20px;
+}
+
+.Sticky {
+    position: fixed;
+    margin-top: 0;
+    transition: var(--transition-effect);
+}
+
+.headerdark {
+    background-color: var(--dark-background-primary);
+}
+
+.headerlight {
+    background-color: var(--light-button);
+}
+
+.Sticky,
+.Absolute {
     top: 0;
     left: 0;
-    margin-top: 20px;
     padding: 1% 2%;
     width: 100%;
     display: flex;
@@ -83,17 +101,30 @@
                     transition: var(--transition-effect);
                 }
             }
+            li {
+                .btn-menu {
+                    background-color: inherit;
+                    color: var(--light-text);
+                    visibility: hidden;
+                }
+            }
         }
     }
 }
 
 @media only screen and (max-width: 980px) {
-    .header {
+    .Sticky,
+    .Absolute {
         .nav-container {
             .list {
                 justify-content: flex-end;
                 .list-item {
                     display: none;
+                }
+                li {
+                    .btn-menu {
+                        visibility: visible;
+                    }
                 }
             }
         }

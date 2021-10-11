@@ -7,7 +7,8 @@
     --dark-button: #00155F;
     --dark-button-radius: 3px solid #444444;
     --hover-button-header: #00FF85;
-    --transition-effect: all 90ms ease-in-out;
+    --transition-effect: all 100ms ease-in-out;
+    --dark-background-primary: #373E4F;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
