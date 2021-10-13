@@ -1,6 +1,10 @@
 :root {
     --light-text: #ffffff;
+    --light-text-title: #5C71A7;
+    --light-text-subtitle: #6C63FF;
     --dark-text: #444444;
+    --dark-text-title: #D71FC4;
+    --dark-text-subtitle: #FF70F1;
     --light-text-secondary: #FFF500;
     --light-button: #80A3FF;
     --light-button-radius: 3px solid #FFE600;
@@ -9,6 +13,7 @@
     --hover-button-header: #00FF85;
     --transition-effect: all 100ms ease-in-out;
     --dark-background-primary: #373E4F;
+    --decoration-circle: #01A4FF;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');

@@ -1,91 +1,97 @@
 @import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
 .portada {
-  padding: 10% 2%;
   position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10% 2% 0;
+  z-index: 3;
+  height: 100vh;
   -webkit-transition: var(--transition-effect);
   transition: var(--transition-effect);
 }
 
-.portada .portadaFondo {
+.portada::before {
+  content: "";
+  background-image: url("../../Images/Fondo.jpg");
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+  -webkit-filter: brightness(15%);
+          filter: brightness(15%);
 }
 
-.portada .titulo {
-  bottom: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 110px;
-  text-align: justify;
-  color: var(--light-text);
-}
-
-.portada .nombre {
+.portada .portadaInfo {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.portada .profesion {
+.portada .portadaInfo .texto .titulo {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  text-align: justify;
+  color: var(--light-text);
+}
+
+.portada .portadaInfo .texto .nombre {
+  display: inline;
+}
+
+.portada .portadaInfo .texto .profesion {
   font-family: 'Gemunu Libre', sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  letter-spacing: 36px;
+  font-size: 30px;
+  letter-spacing: 22px;
   color: var(--light-text-secondary);
 }
 
-/* .light {
-    background-image: url("../../Images/Port.png");
-    transition: var(--transition-effect);
+.portada .portadaInfo .profile {
+  background-image: url("../../Images/Profile.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
-.dark {
-    background-image: url("../../Images/Port-dark.png");
-    transition: var(--transition-effect);
-} */
-@media only screen and (max-width: 980px) {
-  /*  .dark {
-        background-image: url("../../Images/Port.png");
-        transition: var(--transition-effect);
-    } */
-  .portada .portadaFondo {
-    -o-object-position: right;
-       object-position: right;
-  }
-  .portada .titulo {
-    font-size: 50px;
-  }
-  .portada .saludo {
-    margin-top: 50px;
-  }
-  .portada .profesion {
-    letter-spacing: 16px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 431px) {
+@media only screen and (max-width: 700px) {
   .portada {
-    padding-bottom: 30%;
-    overflow: hidden;
+    padding-bottom: 10%;
   }
-  .portada .portadaFondo {
-    right: 0;
-    margin-right: -50%;
-    width: auto;
+  .portada .portadaInfo .texto .titulo {
+    font-size: 50px;
+    text-align: center;
   }
-  .portada .profesion {
+  .portada .portadaInfo .texto .nombre {
+    font-size: 40px;
+    display: inline-block;
+  }
+  .portada .portadaInfo .texto .profesion {
     letter-spacing: 10px;
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .portada {
+    height: auto;
+    padding-bottom: 10%;
   }
 }
 /*# sourceMappingURL=Portada.css.map */

@@ -9,20 +9,18 @@ const Portada = () => {
   const thema = useContext(Tema);
   const { theme, claro } = thema;
   return (
-    <div className={`container portada ${theme}`}>
+    <div className={`portada ${theme}`}>
       <Header />
-      {claro ? (
-        <img src={port} alt="" className="portadaFondo" />
-      ) : (
-        <img src={portDark} alt="" className="portadaFondo" />
-      )}
-      <h1 className="titulo saludo">Hi,</h1>
-      <h1 className="titulo nombre">
-        <pre>I´m </pre> ROBERT WEST
-      </h1>
-      <h1 className={`titulo profesion profesion${theme}`}>
-        frontend developer
-      </h1>
+      <div className="portadaInfo">
+        <div className="texto">
+          <h1 className="titulo saludo">Hi,</h1>
+          <h1 className="titulo nombre">I´m ROBERT WEST</h1>
+          <h1 className={`titulo profesion profesion${theme}`}>
+            frontend developer
+          </h1>
+        </div>
+        <div className="profile"></div>
+      </div>
     </div>
   );
 };
