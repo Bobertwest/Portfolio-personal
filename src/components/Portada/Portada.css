@@ -5,7 +5,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10% 2% 0;
+  /* padding: 10% 2% 10%; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 3;
   height: 100vh;
   -webkit-transition: var(--transition-effect);
@@ -38,6 +41,10 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.portada .portadaInfo .texto {
+  margin: 2% 0 10px;
 }
 
 .portada .portadaInfo .texto .titulo {

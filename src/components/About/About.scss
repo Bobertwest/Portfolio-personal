@@ -37,6 +37,7 @@
     z-index: 2;
     overflow: hidden;
     padding: calc(1% + 74.9px) 5% 0;
+    transition: var(--transition-effect);
     &::before {
         content: "";
         width: 736px;
@@ -74,7 +75,7 @@
             font-family: Open Sans;
             font-style: normal;
             font-weight: 600;
-            font-size: 72px;
+            font-size: 35px;
         }
         .aboutPosition {
             display: inline;
@@ -83,14 +84,14 @@
             font-family: Open Sans;
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 20px;
             text-align: justify;
         }
         .aboutAbout {
             font-family: Open Sans;
             font-style: normal;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 20px;
             text-align: justify;
         }
     }

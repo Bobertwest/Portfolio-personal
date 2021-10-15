@@ -2,12 +2,10 @@ import React, { useContext } from "react";
 import { Tema } from "../../context/Context";
 import Header from "../Header/Header";
 import "./Portada.css";
-import port from "../../Images/Port.png";
-import portDark from "../../Images/Port-dark.png";
 
 const Portada = () => {
   const thema = useContext(Tema);
-  const { theme, claro } = thema;
+  const { theme } = thema;
   return (
     <div className={`portada ${theme}`}>
       <Header />

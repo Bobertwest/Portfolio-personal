@@ -22,8 +22,10 @@
 
 .responsivelight {
     background-color: var(--light-button);
+    transition: var(--transition-effect);
 }
 
 .responsivedark {
     background-color: var(--dark-background-primary);
+    transition: var(--transition-effect);
 }

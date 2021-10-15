@@ -28,9 +28,13 @@
 
 .responsivelight {
   background-color: var(--light-button);
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 
 .responsivedark {
   background-color: var(--dark-background-primary);
+  -webkit-transition: var(--transition-effect);
+  transition: var(--transition-effect);
 }
 /*# sourceMappingURL=MenuResponisve.css.map */
