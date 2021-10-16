@@ -8,7 +8,7 @@ const About = () => {
 
   const { theme } = thema;
   return (
-    <div className={`about${theme}`}>
+    <div className={`container about${theme}`}>
       <Icono />
       <article className="aboutText">
         <h1 className="aboutTitle">About me</h1>

@@ -1,0 +1,95 @@
+@import '../../index.css';
+.servicesdark {
+    background-color: var(--dark-background-primary);
+    .servicesTitle {
+        color: var(--dark-text-title);
+    }
+    .service {
+        .iconoText {
+            color: var(--light-text);
+        }
+    }
+}
+
+.serviceslight {
+    background-color: var(--light-text);
+    .servicesTitle {
+        color: var(--light-text-title);
+    }
+    .service {
+        .iconoText {
+            color: var(--light-third-text);
+        }
+    }
+}
+
+.serviceslight,
+.servicesdark {
+    width: 100%;
+    height: 100vh;
+    @media screen and(max-width: 990px) {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    &::before {
+        content: "";
+        width: 736px;
+        height: 736px;
+        position: absolute;
+        background-color: var(--decoration-circle);
+        border-radius: 100%;
+        left: -422px;
+        bottom: calc(-416px - 74.9px);
+        @media screen and (max-width: 1123px) {
+            visibility: hidden;
+        }
+    }
+    .servicesTitle {
+        text-align: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+    .allServices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .service {
+            text-align: center;
+            width: 441px;
+            margin: 20px 0;
+            .design {
+                color: #0BFADD;
+            }
+            .responsive {
+                color: #00FF66;
+            }
+            .develop {
+                color: #FF9900;
+            }
+            .deploy {
+                color: #DFFF1E;
+            }
+            .setting {
+                color: #6D1DD3;
+            }
+            .iconoService {
+                width: 90px;
+                height: 90px;
+                transition-duration: 0.5s;
+                &:hover {
+                    transform: scale(1.2);
+                    opacity: 0.6;
+                }
+            }
+            .iconoText {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+            }
+        }
+    }
+}

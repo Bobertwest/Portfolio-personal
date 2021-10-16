@@ -17,6 +17,7 @@
     --dark-background-secondary: #1D2028;
     --decoration-circle: #01A4FF;
     --light-secondary-text: #575A89;
+    --light-third-text: #00337E;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -41,9 +42,10 @@ code {
 .container {
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding: calc(1% + 74.9px) 5% calc(1% + 74.9px);
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition-effect);
 }
 
 .btn {

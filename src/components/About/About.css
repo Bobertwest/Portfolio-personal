@@ -33,14 +33,8 @@
 
 .aboutlight,
 .aboutdark {
-  width: 100%;
-  height: 100vh;
   position: relative;
   z-index: 2;
-  overflow: hidden;
-  padding: calc(1% + 74.9px) 5% 0;
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
 }
 
 .aboutlight::before,
@@ -84,8 +78,8 @@
   width: 100%;
   margin-left: 50%;
   margin-top: 50vh;
-  -webkit-transform: translateY(-65%);
-          transform: translateY(-65%);
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
 }
 
 @media screen and (max-width: 985px) {

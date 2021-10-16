@@ -1,0 +1,134 @@
+@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+.servicesdark {
+  background-color: var(--dark-background-primary);
+}
+
+.servicesdark .servicesTitle {
+  color: var(--dark-text-title);
+}
+
+.servicesdark .service .iconoText {
+  color: var(--light-text);
+}
+
+.serviceslight {
+  background-color: var(--light-text);
+}
+
+.serviceslight .servicesTitle {
+  color: var(--light-text-title);
+}
+
+.serviceslight .service .iconoText {
+  color: var(--light-third-text);
+}
+
+.serviceslight,
+.servicesdark {
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 990px) {
+  .serviceslight,
+  .servicesdark {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
+
+.serviceslight::before,
+.servicesdark::before {
+  content: "";
+  width: 736px;
+  height: 736px;
+  position: absolute;
+  background-color: var(--decoration-circle);
+  border-radius: 100%;
+  left: -422px;
+  bottom: calc(-416px - 74.9px);
+}
+
+@media screen and (max-width: 1123px) {
+  .serviceslight::before,
+  .servicesdark::before {
+    visibility: hidden;
+  }
+}
+
+.serviceslight .servicesTitle,
+.servicesdark .servicesTitle {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.serviceslight .allServices,
+.servicesdark .allServices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.serviceslight .allServices .service,
+.servicesdark .allServices .service {
+  text-align: center;
+  width: 441px;
+  margin: 20px 0;
+}
+
+.serviceslight .allServices .service .design,
+.servicesdark .allServices .service .design {
+  color: #0BFADD;
+}
+
+.serviceslight .allServices .service .responsive,
+.servicesdark .allServices .service .responsive {
+  color: #00FF66;
+}
+
+.serviceslight .allServices .service .develop,
+.servicesdark .allServices .service .develop {
+  color: #FF9900;
+}
+
+.serviceslight .allServices .service .deploy,
+.servicesdark .allServices .service .deploy {
+  color: #DFFF1E;
+}
+
+.serviceslight .allServices .service .setting,
+.servicesdark .allServices .service .setting {
+  color: #6D1DD3;
+}
+
+.serviceslight .allServices .service .iconoService,
+.servicesdark .allServices .service .iconoService {
+  width: 90px;
+  height: 90px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.serviceslight .allServices .service .iconoService:hover,
+.servicesdark .allServices .service .iconoService:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.serviceslight .allServices .service .iconoText,
+.servicesdark .allServices .service .iconoText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+/*# sourceMappingURL=Services.css.map */

@@ -22,7 +22,7 @@
 .Absolute {
     top: 0;
     left: 0;
-    padding: 1% 2%;
+    padding: 2% 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@
         }
     }
     .nav-container {
-        width: 60%;
+        width: 55%;
         .list {
             list-style: none;
             width: 100%;
@@ -101,11 +101,11 @@
                     transition: var(--transition-effect);
                 }
             }
-            li {
+            .btn-menu-container {
+                display: none;
                 .btn-menu {
-                    background-color: inherit;
                     color: var(--light-text);
-                    visibility: hidden;
+                    background-color: inherit;
                 }
             }
         }
@@ -121,10 +121,8 @@
                 .list-item {
                     display: none;
                 }
-                li {
-                    .btn-menu {
-                        visibility: visible;
-                    }
+                .btn-menu-container {
+                    display: block;
                 }
             }
         }

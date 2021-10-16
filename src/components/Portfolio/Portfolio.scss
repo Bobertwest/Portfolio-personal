@@ -1,0 +1,124 @@
+@import '../../index.css';
+.portfoliodark {
+    background-color: var(--dark-background-secondary);
+    .portfolioTitle {
+        color: var(--dark-text-title);
+    }
+}
+
+.portfoliolight {
+    background-color: var(--light-text);
+    .portfolioTitle {
+        color: var(--light-text-title);
+    }
+}
+
+.portfoliolight,
+.portfoliodark {
+    height: auto;
+    .portfolioTitle {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 98px;
+    }
+    .allWorks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .work {
+            width: 400px;
+            height: 250px;
+            margin-bottom: 20px;
+            border-radius: 23px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.5s;
+            &:hover {
+                .fondoWork {
+                    transform: scale(1.2);
+                }
+                .contenido {
+                    transform: translateY(0);
+                }
+            }
+            @media screen and (max-width: 430px) {
+                width: 100%;
+                padding: 0 20%;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .fondoWork {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: inherit;
+                object-fit: cover;
+                transition: all 500ms ease-in-out;
+            }
+            .contenido {
+                position: absolute;
+                transition: all 500ms ease-in-out;
+                color: blue;
+                padding: 10% 0;
+                transform: translateY(100%);
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: inherit;
+                background-color: rgba($color: #000000, $alpha: 0.8);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                color: var(--light-text);
+                h3 {
+                    margin-bottom: 3%;
+                    width: 100%;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    width: 100%;
+                }
+                a {
+                    color: var(--light-text);
+                    text-decoration: none;
+                    font-size: 25px;
+                    margin: 0 5%;
+                }
+            }
+        }
+    }
+    .bussinesess {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .titleCenter {
+            text-align: center;
+            margin: 20px 0 10px;
+            line-height: normal;
+        }
+        .linkSublimat {
+            background-color: var(--light-text);
+            border-radius: 100%;
+            margin: auto;
+            padding: 30px;
+            max-width: 200px;
+            width: 80%;
+            .sublimat {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}

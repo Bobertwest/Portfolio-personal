@@ -7,6 +7,21 @@ const useSkill = () => {
   const thema = useContext(Tema);
   const { claro } = thema;
 
+  const Titulo = styled.div`
+    position: absolute;
+    width: 105%;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    padding: 2px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 18px #888888;
+    z-index: 7;
+    visibility: hidden;
+    transition: all 100ms ease;
+  `;
+
   const Content = styled.div`
     position: relative;
     border-radius: 100%;
@@ -14,7 +29,10 @@ const useSkill = () => {
     width: 100px;
     height: 100px;
     background: ${(props) => props.centerColor};
-
+    &:hover ${Titulo} {
+      visibility: visible;
+      transform: translateY(50%);
+    }
     @media screen and (max-width: 410px) {
       margin: 30px 0;
     }
@@ -94,10 +112,10 @@ const useSkill = () => {
   `;
 
   const Skill = (props) => {
-    const { time, content, grades } = props;
+    const { time, content, grades, text } = props;
     return (
-      <Content centerColor={claro ? "#F5F5F5" : "#1D2028"}>
-        <Centro centerColor={claro ? "#F5F5F5" : "#1D2028"}>
+      <Content centerColor={claro ? "#Ffffff" : "#1D2028"}>
+        <Centro centerColor={claro ? "#Ffffff" : "#1D2028"}>
           {content ? <Image src={content} /> : null}
         </Centro>
         <SemiCircle1
@@ -108,7 +126,8 @@ const useSkill = () => {
           animation={`anim${grades}`.toString()}
         />
         <SemiCircle2 circleColor={"#01A4FF"} time={time ? time : "500ms"} />
-        <Square centerColor={claro ? "#F5F5F5" : "#1D2028"} />
+        <Square centerColor={claro ? "#Ffffff" : "#1D2028"} />
+        <Titulo className="titulo">{text}</Titulo>
       </Content>
     );
   };

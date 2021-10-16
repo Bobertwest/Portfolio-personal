@@ -23,7 +23,7 @@
 .Absolute {
   top: 0;
   left: 0;
-  padding: 1% 2%;
+  padding: 2% 2%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +90,7 @@
 
 .Sticky .nav-container,
 .Absolute .nav-container {
-  width: 60%;
+  width: 55%;
 }
 
 .Sticky .nav-container .list,
@@ -151,11 +151,15 @@
   transition: var(--transition-effect);
 }
 
-.Sticky .nav-container .list li .btn-menu,
-.Absolute .nav-container .list li .btn-menu {
-  background-color: inherit;
+.Sticky .nav-container .list .btn-menu-container,
+.Absolute .nav-container .list .btn-menu-container {
+  display: none;
+}
+
+.Sticky .nav-container .list .btn-menu-container .btn-menu,
+.Absolute .nav-container .list .btn-menu-container .btn-menu {
   color: var(--light-text);
-  visibility: hidden;
+  background-color: inherit;
 }
 
 @media only screen and (max-width: 980px) {
@@ -169,9 +173,9 @@
   .Absolute .nav-container .list .list-item {
     display: none;
   }
-  .Sticky .nav-container .list li .btn-menu,
-  .Absolute .nav-container .list li .btn-menu {
-    visibility: visible;
+  .Sticky .nav-container .list .btn-menu-container,
+  .Absolute .nav-container .list .btn-menu-container {
+    display: block;
   }
 }
 /*# sourceMappingURL=Header.css.map */

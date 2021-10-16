@@ -58,7 +58,7 @@ const Header = () => {
               className={`btn btn-slider ${theme}`}
               onClick={tema}></button>
           </li>
-          <li>
+          <li className="btn-menu-container">
             <button
               className="btn btn-menu"
               onClick={() => setShowMenu(!showMenu)}>
