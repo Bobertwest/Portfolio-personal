@@ -4,6 +4,16 @@ import { createContext } from "react";
 export const Tema = createContext();
 
 const Context = (props) => {
+  //IDS
+  const elementID = {
+    about: "about",
+    skills: "skills",
+    services: "services",
+    portfolio: "portfolio",
+    contact: "contact",
+  };
+
+  //Temas
   const themes = {
     white: "light",
     dark: "dark",
@@ -18,6 +28,7 @@ const Context = (props) => {
         themes: themes,
         theme: theme,
         claro: claro,
+        elementID: elementID,
         setTheme: setTheme,
         setClaro: setClaro,
       }}>

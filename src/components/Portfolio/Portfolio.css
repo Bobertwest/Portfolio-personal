@@ -7,12 +7,20 @@
   color: var(--dark-text-title);
 }
 
+.portfoliodark .bussinesess {
+  background-color: var(--dark-background-primary);
+}
+
 .portfoliolight {
   background-color: var(--light-text);
 }
 
 .portfoliolight .portfolioTitle {
   color: var(--light-text-title);
+}
+
+.portfoliolight .bussinesess {
+  background-color: var(--light-background-secondary);
 }
 
 .portfoliolight,
@@ -163,6 +171,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 10px;
 }
 
 .portfoliolight .bussinesess .titleCenter,
@@ -178,7 +187,7 @@
   border-radius: 100%;
   margin: auto;
   padding: 30px;
-  max-width: 200px;
+  max-width: 150px;
   width: 80%;
 }
 

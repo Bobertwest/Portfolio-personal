@@ -16,10 +16,10 @@ import npm from "../../SVGS/npm.svg";
 const Skills = () => {
   const [Skill] = useSkill();
   const thema = useContext(Tema);
-  const { theme } = thema;
+  const { theme, elementID } = thema;
 
   return (
-    <div className={`container mySkills${theme}`}>
+    <div className={`container mySkills${theme}`} id={elementID.skills}>
       <h1 className="mySkillsTitle">My Skills</h1>
       <div className="allSkills">
         <Skill time={400} grades={140} content={html} text="Html5" />

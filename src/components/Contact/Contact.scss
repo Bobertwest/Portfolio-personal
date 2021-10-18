@@ -1,0 +1,114 @@
+@import '../../index.css';
+.contactlight {
+    background-color: var(--contact-light-background);
+    .contactTitle {
+        color: var(--contact-light-title);
+    }
+}
+
+.contactdark {
+    background-color: var(--contact-dark-background);
+    .contactTitle {
+        color: var(--contact-dark-title);
+    }
+}
+
+.contactlight,
+.contactdark {
+    @media screen and (max-width: 1167px) {
+        height: auto;
+    }
+    .contactTitle {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: normal;
+    }
+    .contactMessage {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: normal;
+        margin: 20px 0;
+        color: var(--light-text);
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 900px;
+            width: 600px;
+            input {
+                width: 90%;
+                height: 50px;
+                margin-bottom: 40px;
+                outline: none;
+                padding: 5px;
+            }
+            textarea {
+                margin-bottom: 40px;
+                padding: 5px;
+                outline: none;
+                resize: none;
+                width: 90%;
+            }
+            .sendForm {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 25px;
+                border-radius: 15px;
+                width: 250px;
+                width: 60%;
+                background-color: var(--decoration-circle);
+                color: var(--light-text);
+            }
+        }
+        .media {
+            padding: 30px 50px;
+            padding-right: 0;
+            max-width: 900px;
+            width: 450px;
+            border: none;
+            border-left: solid 1px var(--light-text);
+            @media screen and (max-width: 1167px) {
+                border: none;
+                border-top: solid 1px var(--light-text);
+            }
+            .mediaTitle {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: normal;
+                color: var(--light-text);
+                margin-bottom: 10px;
+            }
+            .mediaList {
+                list-style: none;
+                .whats {
+                    cursor: pointer;
+                }
+                li {
+                    color: var(--light-text);
+                    p,
+                    a {
+                        text-decoration: none;
+                        color: var(--light-text);
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 49px;
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

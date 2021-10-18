@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Portada from "./components/Portada/Portada";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Services from "./components/Services/Services";
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <Services />
         <Portfolio />
+        <Contact />
         {/* <h1>hola mudno</h1>
         <h1>hola mudno</h1>
         <h1>hola mudno</h1>

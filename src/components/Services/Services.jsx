@@ -5,9 +5,9 @@ import "./Services.css";
 
 const Services = () => {
   const thema = useContext(Tema);
-  const { theme } = thema;
+  const { theme, elementID } = thema;
   return (
-    <div className={`container services${theme}`}>
+    <div className={`container services${theme}`} id={elementID.services}>
       <h1 className="servicesTitle">My services</h1>
       <div className="allServices">
         <Service

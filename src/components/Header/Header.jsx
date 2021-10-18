@@ -3,7 +3,7 @@ import { Tema } from "../../context/Context";
 import { Divide as Hamburger } from "hamburger-react";
 import "./Header.css";
 import MenuResponsive from "../Menu-responsive/MenuResponsive";
-import { getAltura } from "../../helpers/helpers";
+import { getAltura, goTo } from "../../helpers/helpers";
 
 const Header = () => {
   const thema = useContext(Tema);
@@ -11,6 +11,7 @@ const Header = () => {
   const {
     themes: { white, dark },
     theme,
+    elementID,
     claro,
     setTheme,
     setClaro,
@@ -48,9 +49,15 @@ const Header = () => {
     }
   }, [showMenu, altura, theme]);
 
+  const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className={`${claseName} header${headerFondo}`} id="head">
-      <button className="btn btn-header">The Robert West</button>
+      <button className="btn btn-header" onClick={goToTop}>
+        The Robert West
+      </button>
       <nav className="nav-container">
         <ul className="list">
           <li className="slider">
@@ -65,21 +72,51 @@ const Header = () => {
               <Hamburger size={20} />
             </button>
           </li>
-          {showMenu ? <MenuResponsive /> : null}
+          {showMenu ? <MenuResponsive setShowMenu={setShowMenu} /> : null}
           <li className="list-item">
-            <button className="btn btn-nav">About me</button>
+            <button
+              className="btn btn-nav"
+              onClick={() => {
+                goTo(elementID.about);
+              }}>
+              About me
+            </button>
           </li>
           <li className="list-item">
-            <button className="btn btn-nav">My Skills</button>
+            <button
+              className="btn btn-nav"
+              onClick={() => {
+                goTo(elementID.skills);
+              }}>
+              My Skills
+            </button>
           </li>
           <li className="list-item">
-            <button className="btn btn-nav">My Services</button>
+            <button
+              className="btn btn-nav"
+              onClick={() => {
+                goTo(elementID.services);
+              }}>
+              My Services
+            </button>
           </li>
           <li className="list-item">
-            <button className="btn btn-nav">Portfolio</button>
+            <button
+              className="btn btn-nav"
+              onClick={() => {
+                goTo(elementID.portfolio);
+              }}>
+              Portfolio
+            </button>
           </li>
           <li className="list-item">
-            <button className="btn btn-nav">Contact</button>
+            <button
+              className="btn btn-nav"
+              onClick={() => {
+                goTo(elementID.contact);
+              }}>
+              Contact
+            </button>
           </li>
         </ul>
       </nav>

@@ -7,13 +7,14 @@ import Work from "./Work";
 
 const Portfolio = () => {
   const thema = useContext(Tema);
-  const { theme } = thema;
+  const { theme, elementID } = thema;
   return (
-    <div className={`container portfolio${theme}`}>
+    <div className={`container portfolio${theme}`} id={elementID.portfolio}>
       <h1 className="portfolioTitle">Portafolio</h1>
       <div className="allWorks">
         {portfolio.map((project) => (
           <Work
+            key={project.web}
             fondo={project.fondo}
             titulo={project.titulo}
             descripcion={project.descripcion}

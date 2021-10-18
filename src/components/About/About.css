@@ -124,6 +124,8 @@
 .aboutlight .btn-download,
 .aboutdark .btn-download {
   background-color: var(--decoration-circle);
+  text-decoration: none;
+  text-align: center;
   float: right;
   margin-top: 10px;
   width: 40%;

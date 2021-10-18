@@ -18,6 +18,10 @@
     --decoration-circle: #01A4FF;
     --light-secondary-text: #575A89;
     --light-third-text: #00337E;
+    --contact-light-background: #0071AF;
+    --contact-light-title: #515151;
+    --contact-dark-background: #3C3C3C;
+    --contact-dark-title: #171717;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');

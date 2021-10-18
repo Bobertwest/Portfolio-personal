@@ -58,3 +58,7 @@ export const portfolio = [{
         web: "https://clone-ba0bf.web.app/",
     },
 ];
+
+export const goTo = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+};
