@@ -24,6 +24,7 @@
   top: 0;
   left: 0;
   padding: 2% 2%;
+  z-index: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +161,14 @@
 .Absolute .nav-container .list .btn-menu-container .btn-menu {
   color: var(--light-text);
   background-color: inherit;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.Sticky .nav-container .list .btn-menu-container .btn-menu .butonMenu,
+.Absolute .nav-container .list .btn-menu-container .btn-menu .butonMenu {
+  font-size: 48px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 980px) {

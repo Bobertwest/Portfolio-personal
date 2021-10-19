@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Work = ({ fondo, titulo, descripcion, web, codigo }) => {
   return (
-    <div className="work">
+    <div className="work" data-aos="zoom-in-up">
       <img src={fondo} alt="" className="fondoWork" />
       <div className="contenido">
         <h3>{titulo}</h3>

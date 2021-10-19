@@ -34,6 +34,12 @@
 .aboutlight,
 .aboutdark {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 2;
 }
 
@@ -77,9 +83,8 @@
   max-width: 500px;
   width: 100%;
   margin-left: 50%;
-  margin-top: 50vh;
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
+  /* margin-top: 50vh; */
+  /*         transform: translateY(-75%); */
 }
 
 @media screen and (max-width: 985px) {
@@ -100,7 +105,7 @@
 
 .aboutlight .aboutText .aboutPosition,
 .aboutdark .aboutText .aboutPosition {
-  display: inline;
+  display: inline-block;
 }
 
 .aboutlight .aboutText .aboutName,
@@ -109,7 +114,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  text-align: justify;
 }
 
 .aboutlight .aboutText .aboutAbout,

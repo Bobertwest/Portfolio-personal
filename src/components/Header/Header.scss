@@ -23,6 +23,7 @@
     top: 0;
     left: 0;
     padding: 2% 2%;
+    z-index: 1;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -106,6 +107,11 @@
                 .btn-menu {
                     color: var(--light-text);
                     background-color: inherit;
+                    transition: all 200ms linear;
+                    .butonMenu {
+                        font-size: 48px;
+                        margin-left: 10px;
+                    }
                 }
             }
         }

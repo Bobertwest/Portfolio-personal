@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import "./Skill.css";
 import styled from "styled-components";
 import { Tema } from "../../context/Context";
@@ -112,21 +112,25 @@ const useSkill = () => {
   `;
 
   const Skill = (props) => {
-    const { time, content, grades, text } = props;
+    const { time, content, grades, text, load } = props;
     return (
-      <Content centerColor={claro ? "#Ffffff" : "#1D2028"}>
-        <Centro centerColor={claro ? "#Ffffff" : "#1D2028"}>
+      <Content centerColor={claro ? "#f8f6f6" : "#1D2028"}>
+        <Centro centerColor={claro ? "#f8f6f6" : "#1D2028"}>
           {content ? <Image src={content} /> : null}
         </Centro>
-        <SemiCircle1
-          circleColor={"#01A4FF"}
-          grades={grades + "deg"}
-          newTime={(grades * time) / 180}
-          time={time ? time : "500ms"}
-          animation={`anim${grades}`.toString()}
-        />
-        <SemiCircle2 circleColor={"#01A4FF"} time={time ? time : "500ms"} />
-        <Square centerColor={claro ? "#Ffffff" : "#1D2028"} />
+        {load ? (
+          <Fragment>
+            <SemiCircle1
+              circleColor={"#01A4FF"}
+              grades={grades + "deg"}
+              newTime={(grades * time) / 180}
+              time={time ? time : "500ms"}
+              animation={`anim${grades}`.toString()}
+            />
+            <SemiCircle2 circleColor={"#01A4FF"} time={time ? time : "500ms"} />
+            <Square centerColor={claro ? "#f8f6f6" : "#1D2028"} />
+          </Fragment>
+        ) : null}
         <Titulo className="titulo">{text}</Titulo>
       </Content>
     );

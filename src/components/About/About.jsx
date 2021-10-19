@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className={`container about${theme}`} id={elementID.about}>
       <Icono />
-      <article className="aboutText">
+      <article className="aboutText" data-aos="fade-left">
         <h1 className="aboutTitle">About me</h1>
         <p className="aboutName">I'm Robert West</p>
         <p className="aboutName aboutPosition">
@@ -21,10 +21,10 @@ const About = () => {
         <br />
 
         <p className="aboutAbout">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-          consectetur amet voluptatum! Officia maiores ipsum eaque illo, natus
-          fuga, veniam optio, atque nostrum libero praesentium molestiae
-          repellendus quaerat id quo!
+          I am a young mechatronics engineer, technology enthusiast. I like
+          learning new technologies and inventing functional solutions.
+          Currently I am working as a frontend developer. I always seek to use
+          the best programming practices and meet the needs of my clients.
         </p>
         <a
           className="btn btn-download"

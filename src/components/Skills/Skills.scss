@@ -10,7 +10,7 @@
 }
 
 .mySkillslight {
-    background-color: var(--light-text);
+    background-color: var(--light-background-secondary);
     .mySkillsTitle {
         color: var(--light-text-title);
     }
@@ -55,9 +55,20 @@
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
+        animation: appear 200ms linear;
         display: flex;
         @media screen and (max-width: 410px) {
             padding: 0;
+        }
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(10%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
     .learning {

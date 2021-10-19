@@ -12,7 +12,9 @@ const MenuResponsive = ({ setShowMenu }) => {
     goTo(id);
   };
   return (
-    <nav className={`nav-container-responsive responsive${theme}`}>
+    <nav
+      className={`nav-container-responsive responsive${theme}`}
+      data-aos="slide-left">
       <ul className="list-responsive">
         <li className="list-item-responsive">
           <button

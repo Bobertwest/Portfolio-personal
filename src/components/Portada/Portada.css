@@ -28,6 +28,26 @@
   z-index: -1;
   -webkit-filter: brightness(15%);
           filter: brightness(15%);
+  -webkit-animation: fade 1000ms linear;
+          animation: fade 1000ms linear;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .portada .portadaInfo {

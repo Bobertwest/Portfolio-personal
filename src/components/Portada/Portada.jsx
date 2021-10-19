@@ -10,14 +10,14 @@ const Portada = () => {
     <div className={`portada ${theme}`}>
       <Header />
       <div className="portadaInfo">
-        <div className="texto">
+        <div className="texto" data-aos="fade-up">
           <h1 className="titulo saludo">Hi,</h1>
           <h1 className="titulo nombre">I´m ROBERT WEST</h1>
           <h1 className={`titulo profesion profesion${theme}`}>
             frontend developer
           </h1>
         </div>
-        <div className="profile"></div>
+        <div className="profile" data-aos="fade-down"></div>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Tema } from "../../context/Context";
-import { Divide as Hamburger } from "hamburger-react";
 import "./Header.css";
 import MenuResponsive from "../Menu-responsive/MenuResponsive";
 import { getAltura, goTo } from "../../helpers/helpers";
+import { Icon } from "@iconify/react";
 
 const Header = () => {
   const thema = useContext(Tema);
@@ -53,6 +53,15 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const changeButton = () => {
+    if (showMenu) {
+      document.getElementById("hamburger").style.transform = "rotateY(-180deg)";
+    } else {
+      document.getElementById("hamburger").style.transform = "rotateY(0deg)";
+    }
+    setShowMenu(!showMenu);
+  };
+
   return (
     <header className={`${claseName} header${headerFondo}`} id="head">
       <button className="btn btn-header" onClick={goToTop}>
@@ -68,8 +77,12 @@ const Header = () => {
           <li className="btn-menu-container">
             <button
               className="btn btn-menu"
-              onClick={() => setShowMenu(!showMenu)}>
-              <Hamburger size={20} />
+              onClick={changeButton}
+              id="hamburger">
+              <Icon
+                icon={showMenu ? "line-md:close" : "line-md:menu"}
+                className="butonMenu"
+              />
             </button>
           </li>
           {showMenu ? <MenuResponsive setShowMenu={setShowMenu} /> : null}

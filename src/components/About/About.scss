@@ -32,6 +32,8 @@
 .aboutlight,
 .aboutdark {
     position: relative;
+    display: flex;
+    align-items: center;
     z-index: 2;
     &::before {
         content: "";
@@ -60,8 +62,8 @@
         max-width: 500px;
         width: 100%;
         margin-left: 50%;
-        margin-top: 50vh;
-        transform: translateY(-75%);
+        /* margin-top: 50vh; */
+        /*         transform: translateY(-75%); */
         @media screen and (max-width: 985px) {
             margin-left: 0;
             float: right;
@@ -73,14 +75,13 @@
             font-size: 35px;
         }
         .aboutPosition {
-            display: inline;
+            display: inline-block;
         }
         .aboutName {
             font-family: Open Sans;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
-            text-align: justify;
         }
         .aboutAbout {
             font-family: Open Sans;

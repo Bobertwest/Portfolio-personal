@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import useSkill from "./useSkill";
 import { Tema } from "../../context/Context";
 import "./Skills.css";
@@ -17,20 +17,56 @@ const Skills = () => {
   const [Skill] = useSkill();
   const thema = useContext(Tema);
   const { theme, elementID } = thema;
-
+  const [load, setLoad] = useState(false);
+  window.addEventListener("scroll", () => {
+    console.log(parseInt(window.pageYOffset));
+    if (parseInt(window.pageYOffset) >= 990) {
+      setLoad(true);
+    }
+  });
   return (
     <div className={`container mySkills${theme}`} id={elementID.skills}>
       <h1 className="mySkillsTitle">My Skills</h1>
       <div className="allSkills">
-        <Skill time={400} grades={140} content={html} text="Html5" />
-        <Skill time={400} grades={30} content={css} text="CSS3" />
-        <Skill time={400} grades={75} content={sass} text="Sass" />
-        <Skill time={400} grades={65} content={jav} text="Javascript" />
-        <Skill time={400} grades={95} content={react} text="React js" />
-        <Skill time={400} grades={55} content={redux} text="Redux" />
-        <Skill time={400} grades={85} content={git} text="GIT" />
-        <Skill time={400} grades={50} content={firebase} text="Firebase" />
-        <Skill time={400} grades={80} content={npm} text="NPM" />
+        <Skill
+          time={400}
+          grades={140}
+          content={html}
+          text="Html5"
+          load={load}
+        />
+        <Skill time={400} grades={30} content={css} text="CSS3" load={load} />
+        <Skill time={400} grades={75} content={sass} text="Sass" load={load} />
+        <Skill
+          time={400}
+          grades={65}
+          content={jav}
+          text="Javascript"
+          load={load}
+        />
+        <Skill
+          time={400}
+          grades={95}
+          content={react}
+          text="React js"
+          load={load}
+        />
+        <Skill
+          time={400}
+          grades={55}
+          content={redux}
+          text="Redux"
+          load={load}
+        />
+        <Skill time={400} grades={85} content={git} text="GIT" load={load} />
+        <Skill
+          time={400}
+          grades={50}
+          content={firebase}
+          text="Firebase"
+          load={load}
+        />
+        <Skill time={400} grades={80} content={npm} text="NPM" load={load} />
       </div>
       <p className="learning">AND ALWAYS LEARNING🔥</p>
       <Icono2 />
