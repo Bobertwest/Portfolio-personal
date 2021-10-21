@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
 .contactlight {
   background-color: var(--contact-light-background);
@@ -78,11 +79,34 @@
 
 .contactlight .contact .contactForm textarea,
 .contactdark .contact .contactForm textarea {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 5px;
   outline: none;
   resize: none;
   width: 90%;
+}
+
+.contactlight .contact .contactForm .error,
+.contactdark .contact .contactForm .error {
+  background-color: var(--error-message);
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--light-text);
+  margin-bottom: 5px;
+  font-family: Open Sans;
+}
+
+.contactlight .contact .contactForm .error::after,
+.contactdark .contact .contactForm .error::after {
+  content: " 👉";
+}
+
+@media screen and (max-width: 1167px) {
+  .contactlight .contact .contactForm .error::after,
+  .contactdark .contact .contactForm .error::after {
+    content: " 👇";
+  }
 }
 
 .contactlight .contact .contactForm .sendForm,
@@ -92,10 +116,13 @@
   font-weight: normal;
   font-size: 25px;
   border-radius: 15px;
-  width: 250px;
+  max-width: 250px;
   width: 60%;
   background-color: var(--decoration-circle);
   color: var(--light-text);
+  margin-bottom: 40px;
+  outline: none;
+  padding: 5px;
 }
 
 .contactlight .contact .media,
@@ -113,6 +140,13 @@
   .contactdark .contact .media {
     border: none;
     border-top: solid 1px var(--light-text);
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .contactlight .contact .media,
+  .contactdark .contact .media {
+    padding-left: 0;
   }
 }
 
@@ -153,6 +187,5 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 49px;
-  display: inline;
 }
 /*# sourceMappingURL=Contact.css.map */

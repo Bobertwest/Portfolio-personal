@@ -19,7 +19,6 @@ const Skills = () => {
   const { theme, elementID } = thema;
   const [load, setLoad] = useState(false);
   window.addEventListener("scroll", () => {
-    console.log(parseInt(window.pageYOffset));
     if (parseInt(window.pageYOffset) >= 990) {
       setLoad(true);
     }

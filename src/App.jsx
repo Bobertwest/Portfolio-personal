@@ -22,20 +22,6 @@ function App() {
         <Services />
         <Portfolio />
         <Contact />
-        <iframe
-          src="https://jueguitodob.netlify.app/"
-          style={{ width: "100%", height: "100vh" }}
-          title="juego"></iframe>
-        {/* <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1>
-        <h1>hola mudno</h1> */}
       </div>
     </Context>
   );

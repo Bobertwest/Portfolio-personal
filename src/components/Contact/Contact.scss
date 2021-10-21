@@ -51,11 +51,28 @@
                 padding: 5px;
             }
             textarea {
-                margin-bottom: 40px;
+                margin-bottom: 25px;
                 padding: 5px;
                 outline: none;
                 resize: none;
                 width: 90%;
+            }
+            .error {
+                background-color: var(--error-message);
+                font-size: 15px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: var(--light-text);
+                margin-bottom: 5px;
+                font-family: Open Sans;
+                &::after {
+                    content: " 👉";
+                }
+                @media screen and (max-width: 1167px) {
+                    &::after {
+                        content: " 👇";
+                    }
+                }
             }
             .sendForm {
                 font-family: Open Sans;
@@ -63,10 +80,13 @@
                 font-weight: normal;
                 font-size: 25px;
                 border-radius: 15px;
-                width: 250px;
+                max-width: 250px;
                 width: 60%;
                 background-color: var(--decoration-circle);
                 color: var(--light-text);
+                margin-bottom: 40px;
+                outline: none;
+                padding: 5px;
             }
         }
         .media {
@@ -79,6 +99,9 @@
             @media screen and (max-width: 1167px) {
                 border: none;
                 border-top: solid 1px var(--light-text);
+            }
+            @media screen and (max-width: 333px) {
+                padding-left: 0;
             }
             .mediaTitle {
                 font-family: Open Sans;
@@ -105,7 +128,6 @@
                         font-weight: 600;
                         font-size: 15px;
                         line-height: 49px;
-                        display: inline;
                     }
                 }
             }

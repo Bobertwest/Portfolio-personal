@@ -65,7 +65,8 @@ const Header = () => {
   return (
     <header className={`${claseName} header${headerFondo}`} id="head">
       <button className="btn btn-header" onClick={goToTop}>
-        The Robert West
+        The R<Icon icon="akar-icons:react-fill" className="reactIcon" />
+        bert West
       </button>
       <nav className="nav-container">
         <ul className="list">

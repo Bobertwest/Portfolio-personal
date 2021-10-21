@@ -1,12 +1,70 @@
 import { Icon } from "@iconify/react";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Swal from "sweetalert2";
 import { Tema } from "../../context/Context";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../helpers/dbConfig";
 import "./Contact.css";
+import Spinner from "../../helpers/Spinner";
 
 const Contact = () => {
   const thema = useContext(Tema);
   const { theme, elementID } = thema;
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [messageContact, setMessageContact] = useState({
+    email: "",
+    name: "",
+    message: "",
+  });
+
+  const { email, name, message } = messageContact;
+
+  const handleChange = (e) => {
+    setMessageContact({
+      ...messageContact,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const submitMessage = async (e) => {
+    e.preventDefault();
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      setError(true);
+    } else {
+      setError(false);
+      try {
+        setLoading(true);
+        const date = new Date();
+        var month = date.getUTCMonth() + 1;
+        const day = date.getUTCDate();
+        const year = date.getUTCFullYear();
+        const hour = date.getHours();
+        const minute = date.getMinutes();
+        const finalDate = `${year}-${month}-${day}-(${hour}:${minute})`;
+        const route = `messages/${finalDate}/${name}`;
+        await setDoc(doc(db, route, email), {
+          says: message,
+        });
+        setLoading(false);
+        Swal.fire("Great!", "Message has been sent succefully🙌!!", "success");
+        setMessageContact({
+          email: "",
+          name: "",
+          message: "",
+        });
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+          footer: "Try again...",
+        });
+        console.log(error);
+        setLoading(false);
+      }
+    }
+  };
 
   const CopyToClipboard = (id) => {
     var r = document.createRange();
@@ -25,15 +83,36 @@ const Contact = () => {
         <Icon icon="cib:java" />
       </p>
       <div className="contact">
-        <form className="contactForm">
-          <input type="email" name="email" placeholder="Email" />
-          <input type="text" name="name" placeholder="Name" />
+        <form className="contactForm" onSubmit={submitMessage}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={handleChange}
+            value={email}
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            onChange={handleChange}
+            value={name}
+          />
           <textarea
             name="message"
             cols="30"
             rows="10"
-            placeholder="Message..."></textarea>
-          <input type="submit" value="Send" className="btn sendForm" />
+            placeholder="Message..."
+            onChange={handleChange}
+            value={message}></textarea>
+          {error ? (
+            <p className="error">
+              Todos los campos son obligatorios o puedes buscarme en redes
+            </p>
+          ) : null}
+          <button type="submit" className="btn sendForm" disabled={loading}>
+            {loading ? <Spinner /> : "Send"}
+          </button>
         </form>
         <div className="media">
           <h3 className="mediaTitle">My social networks</h3>
@@ -59,10 +138,11 @@ const Contact = () => {
             <li>
               <a
                 href="mailto:robertmathewwest10@gmail.com"
+                className="emailClass"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Icon icon="eva:email-outline" />
-                {` robert@gmail.com`}
+                {` robertmathewwest10@gmail.com`}
               </a>
             </li>
             <li>

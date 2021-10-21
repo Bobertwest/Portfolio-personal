@@ -71,6 +71,43 @@
   font-size: 15px;
 }
 
+@media screen and (max-width: 326px) {
+  .Sticky .btn-header,
+  .Absolute .btn-header {
+    width: 60%;
+  }
+}
+
+.Sticky .btn-header .reactIcon,
+.Absolute .btn-header .reactIcon {
+  font-size: 15px;
+  color: #61dbfb;
+  -webkit-animation: mymove infinite 3s linear;
+          animation: mymove infinite 3s linear;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes mymove {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .Sticky .btn-nav,
 .Absolute .btn-nav {
   background-color: inherit;

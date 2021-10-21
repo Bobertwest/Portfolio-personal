@@ -22,6 +22,7 @@
     --contact-light-title: #515151;
     --contact-dark-background: #3C3C3C;
     --contact-dark-title: #171717;
+    --error-message: rgb(255, 43, 43);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
