@@ -137,12 +137,12 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="mailto:robertmathewwest10@gmail.com"
+                href="mailto:robert@therobertwest.com"
                 className="emailClass"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Icon icon="eva:email-outline" />
-                {` robertmathewwest10@gmail.com`}
+                {` robert@therobertwest.com`}
               </a>
             </li>
             <li>

@@ -21,14 +21,6 @@
         z-index: -1;
         filter: brightness(15%);
         animation: fade 1000ms linear;
-        @keyframes fade {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
     }
     .portadaInfo {
         width: 100%;
@@ -58,14 +50,23 @@
             }
         }
         .profile {
-            background-image: url('../../Images/Profile2.jpg');
-            background-size: cover;
-            background-position: center;
-            background-position-y: top;
             width: 300px;
             height: 300px;
-            border-radius: 50%;
-            filter: brightness(110%);
+            &::before {
+                content: "";
+                background-image: url('../../Images/Profile2.jpg');
+                border-radius: 50%;
+                position: absolute;
+                background-size: cover;
+                background-position: top center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                filter: brightness(110%);
+                z-index: -1;
+                animation: fade 2000ms linear;
+            }
         }
     }
 }
@@ -96,5 +97,14 @@
     .portada {
         height: auto;
         padding-bottom: 10%;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

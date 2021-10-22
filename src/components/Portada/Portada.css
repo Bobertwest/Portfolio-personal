@@ -32,24 +32,6 @@
           animation: fade 1000ms linear;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .portada .portadaInfo {
   width: 100%;
   display: -webkit-box;
@@ -89,15 +71,26 @@
 }
 
 .portada .portadaInfo .profile {
-  background-image: url("../../Images/Profile2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-position-y: top;
   width: 300px;
   height: 300px;
+}
+
+.portada .portadaInfo .profile::before {
+  content: "";
+  background-image: url("../../Images/Profile2.jpg");
   border-radius: 50%;
+  position: absolute;
+  background-size: cover;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
+  z-index: -1;
+  -webkit-animation: fade 2000ms linear;
+          animation: fade 2000ms linear;
 }
 
 @media only screen and (max-width: 700px) {
@@ -122,6 +115,24 @@
   .portada {
     height: auto;
     padding-bottom: 10%;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=Portada.css.map */
