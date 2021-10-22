@@ -36,9 +36,9 @@ const Contact = () => {
       try {
         setLoading(true);
         const date = new Date();
-        var month = date.getUTCMonth() + 1;
-        const day = date.getUTCDate();
-        const year = date.getUTCFullYear();
+        var month = date.getMonth() + 1;
+        const day = date.getDate();
+        const year = date.getFullYear();
         const hour = date.getHours();
         const minute = date.getMinutes();
         const finalDate = `${year}-${month}-${day}-(${hour}:${minute})`;

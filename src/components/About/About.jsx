@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Tema } from "../../context/Context";
 import Icono from "../Icono";
 import "./About.css";
-import curriculum from "../../assets/Curriculum_PDF.pdf";
+import curriculum from "../../assets/Robert_Mathew_West_CV.pdf";
 
 const About = () => {
   const thema = useContext(Tema);
@@ -29,7 +29,7 @@ const About = () => {
         <a
           className="btn btn-download"
           href={curriculum}
-          download="Robert West - CV"
+          download="Robert Mathew West CV"
           target="_blank"
           rel="noreferrer">
           Download CV

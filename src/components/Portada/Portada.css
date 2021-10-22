@@ -89,12 +89,15 @@
 }
 
 .portada .portadaInfo .profile {
-  background-image: url("../../Images/Profile.jpg");
+  background-image: url("../../Images/Profile2.jpg");
   background-size: cover;
   background-position: center;
+  background-position-y: top;
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 @media only screen and (max-width: 700px) {
