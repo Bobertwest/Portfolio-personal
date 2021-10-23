@@ -29,7 +29,7 @@ const Skills = () => {
       <div className="allSkills">
         <Skill
           time={400}
-          grades={140}
+          grades={120}
           content={html}
           text="Html5"
           load={load}
@@ -45,19 +45,19 @@ const Skills = () => {
         />
         <Skill
           time={400}
-          grades={95}
+          grades={80}
           content={react}
           text="React js"
           load={load}
         />
         <Skill
           time={400}
-          grades={55}
+          grades={40}
           content={redux}
           text="Redux"
           load={load}
         />
-        <Skill time={400} grades={85} content={git} text="GIT" load={load} />
+        <Skill time={400} grades={40} content={git} text="GIT" load={load} />
         <Skill
           time={400}
           grades={50}
@@ -65,7 +65,7 @@ const Skills = () => {
           text="Firebase"
           load={load}
         />
-        <Skill time={400} grades={80} content={npm} text="NPM" load={load} />
+        <Skill time={400} grades={40} content={npm} text="NPM" load={load} />
       </div>
       <p className="learning">AND ALWAYS LEARNING🔥</p>
       <Icono2 />
