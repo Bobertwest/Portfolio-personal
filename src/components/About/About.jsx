@@ -21,10 +21,10 @@ const About = () => {
         <br />
 
         <p className="aboutAbout">
-          I am a young mechatronics engineer, technology enthusiast. I like
-          learning new technologies and inventing functional solutions.
-          Currently I am working as a frontend developer. I always seek to use
-          the best programming practices and meet the needs of my clients.
+          I am a young mechatronics engineer and frontend developer, technology
+          enthusiast. I like learning new technologies and inventing functional
+          solutions. I always seek to use the best programming practices and
+          meet the needs of my clients.
         </p>
         <a
           className="btn btn-download"

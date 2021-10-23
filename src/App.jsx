@@ -8,6 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Context from "./context/Context";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Services />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </Context>
   );
