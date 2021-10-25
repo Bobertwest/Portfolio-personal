@@ -51,6 +51,7 @@ const Header = () => {
 
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    setShowMenu(false);
   };
 
   const changeButton = () => {
@@ -86,7 +87,9 @@ const Header = () => {
               />
             </button>
           </li>
-          {showMenu ? <MenuResponsive setShowMenu={setShowMenu} /> : null}
+          {showMenu ? (
+            <MenuResponsive showMenu={showMenu} setShowMenu={setShowMenu} />
+          ) : null}
           <li className="list-item">
             <button
               className="btn btn-nav"
