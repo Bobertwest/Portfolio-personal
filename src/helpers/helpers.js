@@ -4,6 +4,7 @@ import Pictures from "../Images/Pictures.png";
 import Quotes from "../Images/Quotes.png";
 import Weather from "../Images/Weather.png";
 import Amazon from "../Images/Amazon.png";
+import Hotel from '../Images/hotel.png";
 
 export const getAltura = (altura) => {
     var posicion;
@@ -57,6 +58,13 @@ export const portfolio = [{
         codigo: "https://github.com/Bobertwest/Amazon-clone/tree/master/amazon-clone",
         web: "https://clone-ba0bf.web.app/",
     },
+{
+        fondo: `${Hotel}`,
+        titulo: "Gatsby Hotel",
+        descripcion: "Hotel Site made with gatsby",
+        codigo: "https://github.com/Bobertwest/Hotel-Gatsby",
+        web: "https://gatsby-hotel-siteapp.netlify.app/",
+    }
 ];
 
 export const goTo = (id) => {
