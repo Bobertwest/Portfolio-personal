@@ -1,227 +1,229 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .Absolute {
-  position: absolute;
-  margin-top: 20px;
+    position: absolute;
+    margin-top: 20px;
 }
 
 .Sticky {
-  position: fixed;
-  margin-top: 0;
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    position: fixed;
+    margin-top: 0;
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
 
 .headerdark {
-  background-color: var(--dark-background-primary);
+    background-color: var(--dark-background-primary);
 }
 
 .headerlight {
-  background-color: var(--light-button);
+    background-color: var(--light-button);
 }
 
 .Sticky,
 .Absolute {
-  top: 0;
-  left: 0;
-  padding: 2% 2%;
-  z-index: 1;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 2% 2%;
+    z-index: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .Sticky .btn-header,
 .Absolute .btn-header {
-  color: var(--light-text);
-  background-color: inherit;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+    color: var(--light-text);
+    background-color: inherit;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
 }
 
 .Sticky .btn-header::after,
 .Absolute .btn-header::after {
-  content: "/>";
-  color: #DFFF1E;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+    content: "/>";
+    color: #dfff1e;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .Sticky .btn-header::before,
 .Absolute .btn-header::before {
-  content: "<";
-  color: #DFFF1E;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+    content: "<";
+    color: #dfff1e;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 326px) {
-  .Sticky .btn-header,
-  .Absolute .btn-header {
-    width: 60%;
-  }
+    .Sticky .btn-header,
+    .Absolute .btn-header {
+        width: 60%;
+    }
 }
 
 .Sticky .btn-header .reactIcon,
 .Absolute .btn-header .reactIcon {
-  font-size: 15px;
-  color: #61dbfb;
-  -webkit-animation: mymove infinite 3s linear;
-          animation: mymove infinite 3s linear;
+    font-size: 15px;
+    color: #61dbfb;
+    -webkit-animation: mymove infinite 3s linear;
+    animation: mymove infinite 3s linear;
 }
 
 @-webkit-keyframes mymove {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes mymove {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .Sticky .btn-nav,
 .Absolute .btn-nav {
-  background-color: inherit;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
-  color: var(--light-text);
+    background-color: inherit;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
+    color: var(--light-text);
 }
 
 .Sticky .btn-nav:hover,
 .Absolute .btn-nav:hover {
-  font-weight: bold;
-  color: var(--hover-button-header);
+    font-weight: bold;
+    color: var(--hover-button-header);
 }
 
 .Sticky .nav-container,
 .Absolute .nav-container {
-  width: 55%;
+    width: 55%;
 }
 
 .Sticky .nav-container .list,
 .Absolute .nav-container .list {
-  list-style: none;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .Sticky .nav-container .list .slider,
 .Absolute .nav-container .list .slider {
-  width: 60px;
-  height: 20px;
-  background-color: var(--light-text);
-  border-radius: 14px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: 60px;
+    height: 20px;
+    background-color: var(--light-text);
+    border-radius: 14px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .Sticky .nav-container .list .slider .btn-slider,
 .Absolute .nav-container .list .slider .btn-slider {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
 }
 
 .Sticky .nav-container .list .slider .light,
 .Absolute .nav-container .list .slider .light {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  background-color: var(--light-button);
-  border: var(--light-button-radius);
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    background-color: var(--light-button);
+    border: var(--light-button-radius);
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
 
 .Sticky .nav-container .list .slider .dark,
 .Absolute .nav-container .list .slider .dark {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  background-color: var(--dark-button);
-  border: var(--dark-button-radius);
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    background-color: var(--dark-button);
+    border: var(--dark-button-radius);
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
 
 .Sticky .nav-container .list .btn-menu-container,
 .Absolute .nav-container .list .btn-menu-container {
-  display: none;
+    display: none;
 }
 
 .Sticky .nav-container .list .btn-menu-container .btn-menu,
 .Absolute .nav-container .list .btn-menu-container .btn-menu {
-  color: var(--light-text);
-  background-color: inherit;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
+    color: var(--light-text);
+    background-color: inherit;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
 }
 
 .Sticky .nav-container .list .btn-menu-container .btn-menu .butonMenu,
 .Absolute .nav-container .list .btn-menu-container .btn-menu .butonMenu {
-  font-size: 48px;
-  margin-left: 10px;
+    font-size: 48px;
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 980px) {
-  .Sticky .nav-container .list,
-  .Absolute .nav-container .list {
-    -webkit-box-pack: end;
+    .Sticky .nav-container .list,
+    .Absolute .nav-container .list {
+        -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .Sticky .nav-container .list .list-item,
-  .Absolute .nav-container .list .list-item {
-    display: none;
-  }
-  .Sticky .nav-container .list .btn-menu-container,
-  .Absolute .nav-container .list .btn-menu-container {
-    display: block;
-  }
+        justify-content: flex-end;
+    }
+    .Sticky .nav-container .list .list-item,
+    .Absolute .nav-container .list .list-item {
+        display: none;
+    }
+    .Sticky .nav-container .list .btn-menu-container,
+    .Absolute .nav-container .list .btn-menu-container {
+        display: block;
+    }
 }
+
+
 /*# sourceMappingURL=Header.css.map */

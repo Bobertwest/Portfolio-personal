@@ -1,13 +1,15 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .footer {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .footer .copy {
-  font-size: 12px;
-  font-weight: 700;
-  font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Open Sans;
 }
+
+
 /*# sourceMappingURL=Footer.css.map */

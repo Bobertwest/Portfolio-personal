@@ -1,136 +1,138 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .portada {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* padding: 10% 2% 10%; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 3;
-  height: 100vh;
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* padding: 10% 2% 10%; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 3;
+    height: 100vh;
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
 
 .portada::before {
-  content: "";
-  background-image: url("../../Images/Fondo.jpg");
-  position: absolute;
-  background-size: cover;
-  background-position: top center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-filter: brightness(15%);
-          filter: brightness(15%);
-  -webkit-animation: fade 1000ms linear;
-          animation: fade 1000ms linear;
+    content: "";
+    background-image: url("../../Images/Fondo.jpg");
+    position: absolute;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: brightness(15%);
+    filter: brightness(15%);
+    -webkit-animation: fade 1000ms linear;
+    animation: fade 1000ms linear;
 }
 
 .portada .portadaInfo {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .portada .portadaInfo .texto {
-  margin: 2% 0 10px;
+    margin: 2% 0 10px;
 }
 
 .portada .portadaInfo .texto .titulo {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 70px;
-  text-align: justify;
-  color: var(--light-text);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    text-align: justify;
+    color: var(--light-text);
 }
 
 .portada .portadaInfo .texto .nombre {
-  display: inline;
+    display: inline;
 }
 
 .portada .portadaInfo .texto .profesion {
-  font-family: 'Gemunu Libre', sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-  letter-spacing: 22px;
-  color: var(--light-text-secondary);
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 22px;
+    color: var(--light-text-secondary);
 }
 
 .portada .portadaInfo .profile {
-  width: 300px;
-  height: 300px;
+    width: 300px;
+    height: 300px;
 }
 
 .portada .portadaInfo .profile::before {
-  content: "";
-  background-image: url("../../Images/Profile2.jpg");
-  border-radius: 50%;
-  position: absolute;
-  background-size: cover;
-  background-position: top center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
-  z-index: -1;
+    content: "";
+    background-image: url("../../Images/Profile2.jpg");
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+    z-index: -1;
 }
 
 @media only screen and (max-width: 700px) {
-  .portada {
-    padding-bottom: 10%;
-  }
-  .portada .portadaInfo .texto .titulo {
-    font-size: 50px;
-    text-align: center;
-  }
-  .portada .portadaInfo .texto .nombre {
-    font-size: 40px;
-    display: inline-block;
-  }
-  .portada .portadaInfo .texto .profesion {
-    letter-spacing: 10px;
-    font-size: 20px;
-  }
+    .portada {
+        padding-bottom: 10%;
+    }
+    .portada .portadaInfo .texto .titulo {
+        font-size: 50px;
+        text-align: center;
+    }
+    .portada .portadaInfo .texto .nombre {
+        font-size: 40px;
+        display: inline-block;
+    }
+    .portada .portadaInfo .texto .profesion {
+        letter-spacing: 10px;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
-  .portada {
-    height: auto;
-    padding-bottom: 10%;
-  }
+    .portada {
+        height: auto;
+        padding-bottom: 10%;
+    }
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
+
 /*# sourceMappingURL=Portada.css.map */

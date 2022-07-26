@@ -1,199 +1,201 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .portfoliodark {
-  background-color: var(--dark-background-secondary);
+    background-color: var(--dark-background-secondary);
 }
 
 .portfoliodark .portfolioTitle {
-  color: var(--dark-text-title);
+    color: var(--dark-text-title);
 }
 
 .portfoliodark .bussinesess {
-  background-color: var(--dark-background-primary);
+    background-color: var(--dark-background-primary);
 }
 
 .portfoliolight {
-  background-color: var(--light-text);
+    background-color: var(--light-text);
 }
 
 .portfoliolight .portfolioTitle {
-  color: var(--light-text-title);
+    color: var(--light-text-title);
 }
 
 .portfoliolight .bussinesess {
-  background-color: var(--light-background-secondary);
+    background-color: var(--light-background-secondary);
 }
 
 .portfoliolight,
 .portfoliodark {
-  height: auto;
+    height: auto;
 }
 
 .portfoliolight .portfolioTitle,
 .portfoliodark .portfolioTitle {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 98px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 98px;
 }
 
 .portfoliolight .allWorks,
 .portfoliodark .allWorks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .portfoliolight .allWorks .work,
 .portfoliodark .allWorks .work {
-  width: 400px;
-  height: 250px;
-  margin-bottom: 20px;
-  border-radius: 23px;
-  position: relative;
-  overflow: hidden;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
 }
 
 .portfoliolight .allWorks .work:hover .fondoWork,
 .portfoliodark .allWorks .work:hover .fondoWork {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .portfoliolight .allWorks .work:hover .contenido,
 .portfoliodark .allWorks .work:hover .contenido {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
 @media screen and (max-width: 430px) {
-  .portfoliolight .allWorks .work,
-  .portfoliodark .allWorks .work {
-    width: 100%;
-    padding: 0 20%;
-  }
+    .portfoliolight .allWorks .work,
+    .portfoliodark .allWorks .work {
+        width: 100%;
+        padding: 0 20%;
+    }
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .portfoliolight .allWorks .work .fondoWork,
 .portfoliodark .allWorks .work .fondoWork {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .portfoliolight .allWorks .work .contenido,
 .portfoliodark .allWorks .work .contenido {
-  position: absolute;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-  color: blue;
-  padding: 10% 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: inherit;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: var(--light-text);
+    position: absolute;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    color: blue;
+    padding: 10% 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--light-text);
 }
 
 .portfoliolight .allWorks .work .contenido h3,
 .portfoliodark .allWorks .work .contenido h3 {
-  margin-bottom: 3%;
-  width: 100%;
-  text-align: center;
+    margin-bottom: 3%;
+    width: 100%;
+    text-align: center;
 }
 
 .portfoliolight .allWorks .work .contenido p,
 .portfoliodark .allWorks .work .contenido p {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .portfoliolight .allWorks .work .contenido a,
 .portfoliodark .allWorks .work .contenido a {
-  color: var(--light-text);
-  text-decoration: none;
-  font-size: 25px;
-  margin: 0 5%;
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 5%;
 }
 
 .portfoliolight .bussinesess,
 .portfoliodark .bussinesess {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 .portfoliolight .bussinesess .titleCenter,
 .portfoliodark .bussinesess .titleCenter {
-  text-align: center;
-  margin: 20px 0 10px;
-  line-height: normal;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: normal;
 }
 
 .portfoliolight .bussinesess .linkSublimat,
 .portfoliodark .bussinesess .linkSublimat {
-  background-color: var(--light-text);
-  border-radius: 100%;
-  margin: auto;
-  padding: 30px;
-  max-width: 150px;
-  width: 80%;
+    background-color: var(--light-text);
+    border-radius: 100%;
+    margin: auto;
+    padding: 30px;
+    max-width: 150px;
+    width: 80%;
 }
 
 .portfoliolight .bussinesess .linkSublimat .sublimat,
 .portfoliodark .bussinesess .linkSublimat .sublimat {
-  width: 100%;
-  margin: auto;
+    width: 100%;
+    margin: auto;
 }
+
+
 /*# sourceMappingURL=Portfolio.css.map */

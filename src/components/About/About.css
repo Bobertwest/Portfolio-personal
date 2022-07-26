@@ -1,140 +1,142 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .aboutdark {
-  background-color: var(--dark-background-primary);
+    background-color: var(--dark-background-primary);
 }
 
 .aboutdark .aboutText .aboutTitle {
-  color: var(--light-text-title);
+    color: var(--light-text-title);
 }
 
 .aboutdark .aboutText .aboutName {
-  color: var(--light-text-subtitle);
+    color: var(--light-text-subtitle);
 }
 
 .aboutdark .aboutText .aboutAbout {
-  color: var(--light-text);
+    color: var(--light-text);
 }
 
 .aboutlight {
-  background-color: var(--light-text);
+    background-color: var(--light-text);
 }
 
 .aboutlight .aboutText .aboutTitle {
-  color: var(--light-text-title);
+    color: var(--light-text-title);
 }
 
 .aboutlight .aboutText .aboutName {
-  color: var(--light-text-subtitle);
+    color: var(--light-text-subtitle);
 }
 
 .aboutlight .aboutText .aboutAbout {
-  color: var(--dark-text);
+    color: var(--dark-text);
 }
 
 .aboutlight,
 .aboutdark {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 2;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
 }
 
 .aboutlight::before,
 .aboutdark::before {
-  content: "";
-  width: 736px;
-  height: 736px;
-  position: absolute;
-  background-color: var(--decoration-circle);
-  border-radius: 100%;
-  left: -422px;
-  top: -416px;
-  z-index: -1;
+    content: "";
+    width: 736px;
+    height: 736px;
+    position: absolute;
+    background-color: var(--decoration-circle);
+    border-radius: 100%;
+    left: -422px;
+    top: -416px;
+    z-index: -1;
 }
 
 @media screen and (max-width: 600px) {
-  .aboutlight::before,
-  .aboutdark::before {
-    opacity: 0.2;
-  }
+    .aboutlight::before,
+    .aboutdark::before {
+        opacity: 0.2;
+    }
 }
 
 .aboutlight .icono,
 .aboutdark .icono {
-  position: absolute;
-  max-width: 400px;
-  height: auto;
-  bottom: 0;
+    position: absolute;
+    max-width: 400px;
+    height: auto;
+    bottom: 0;
 }
 
 @media screen and (max-width: 660px) {
-  .aboutlight .icono,
-  .aboutdark .icono {
-    display: none;
-  }
+    .aboutlight .icono,
+    .aboutdark .icono {
+        display: none;
+    }
 }
 
 .aboutlight .aboutText,
 .aboutdark .aboutText {
-  max-width: 500px;
-  width: 100%;
-  margin-left: 50%;
-  /* margin-top: 50vh; */
-  /*         transform: translateY(-75%); */
+    max-width: 500px;
+    width: 100%;
+    margin-left: 50%;
+    /* margin-top: 50vh; */
+    /*         transform: translateY(-75%); */
 }
 
 @media screen and (max-width: 985px) {
-  .aboutlight .aboutText,
-  .aboutdark .aboutText {
-    margin-left: 0;
-    float: right;
-  }
+    .aboutlight .aboutText,
+    .aboutdark .aboutText {
+        margin-left: 0;
+        float: right;
+    }
 }
 
 .aboutlight .aboutText .aboutTitle,
 .aboutdark .aboutText .aboutTitle {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
 }
 
 .aboutlight .aboutText .aboutPosition,
 .aboutdark .aboutText .aboutPosition {
-  display: inline-block;
+    display: inline-block;
 }
 
 .aboutlight .aboutText .aboutName,
 .aboutdark .aboutText .aboutName {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .aboutlight .aboutText .aboutAbout,
 .aboutdark .aboutText .aboutAbout {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: justify;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .aboutlight .btn-download,
 .aboutdark .btn-download {
-  background-color: var(--decoration-circle);
-  text-decoration: none;
-  text-align: center;
-  float: right;
-  margin-top: 10px;
-  width: 40%;
-  padding: 4% 0;
-  border-radius: 62px;
-  color: var(--light-text);
+    background-color: var(--decoration-circle);
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+    width: 40%;
+    padding: 4% 0;
+    border-radius: 62px;
+    color: var(--light-text);
 }
+
+
 /*# sourceMappingURL=About.css.map */

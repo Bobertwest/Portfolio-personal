@@ -1,147 +1,149 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .mySkillsdark {
-  background-color: var(--dark-background-secondary);
+    background-color: var(--dark-background-secondary);
 }
 
 .mySkillsdark .mySkillsTitle {
-  color: var(--dark-text-title);
+    color: var(--dark-text-title);
 }
 
 .mySkillsdark .learning {
-  color: var(--dark-text-title);
+    color: var(--dark-text-title);
 }
 
 .mySkillslight {
-  background-color: var(--light-background-secondary);
+    background-color: var(--light-background-secondary);
 }
 
 .mySkillslight .mySkillsTitle {
-  color: var(--light-text-title);
+    color: var(--light-text-title);
 }
 
 .mySkillslight .learning {
-  color: var(--light-secondary-text);
+    color: var(--light-secondary-text);
 }
 
 .mySkillsdark,
 .mySkillslight {
-  overflow-y: scroll;
-  z-index: 2;
-  overflow: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1290px) {
-  .mySkillsdark,
-  .mySkillslight {
-    height: auto;
-    padding-bottom: 50px;
-  }
+    .mySkillsdark,
+    .mySkillslight {
+        height: auto;
+        padding-bottom: 50px;
+    }
 }
 
 .mySkillsdark::before,
 .mySkillslight::before {
-  content: "";
-  width: 736px;
-  height: 736px;
-  position: absolute;
-  background-color: var(--decoration-circle);
-  border-radius: 100%;
-  right: -422px;
-  bottom: calc(-416px - 74.9px);
-  z-index: -1;
+    content: "";
+    width: 736px;
+    height: 736px;
+    position: absolute;
+    background-color: var(--decoration-circle);
+    border-radius: 100%;
+    right: -422px;
+    bottom: calc(-416px - 74.9px);
+    z-index: -1;
 }
 
 @media screen and (max-width: 1123px) {
-  .mySkillsdark::before,
-  .mySkillslight::before {
-    visibility: hidden;
-  }
+    .mySkillsdark::before,
+    .mySkillslight::before {
+        visibility: hidden;
+    }
 }
 
 .mySkillsdark .mySkillsTitle,
 .mySkillslight .mySkillsTitle {
-  text-align: center;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  margin-bottom: 40px;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 40px;
 }
 
 .mySkillsdark .allSkills,
 .mySkillslight .allSkills {
-  padding: 0 100px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-animation: appear 200ms linear;
-          animation: appear 200ms linear;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    padding: 0 100px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-animation: appear 200ms linear;
+    animation: appear 200ms linear;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 @media screen and (max-width: 410px) {
-  .mySkillsdark .allSkills,
-  .mySkillslight .allSkills {
-    padding: 0;
-  }
+    .mySkillsdark .allSkills,
+    .mySkillslight .allSkills {
+        padding: 0;
+    }
 }
 
 @-webkit-keyframes appear {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @keyframes appear {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 .mySkillsdark .learning,
 .mySkillslight .learning {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 10px;
-  font-size: 20px;
-  line-height: 49px;
-  text-align: center;
-  margin-top: 30px;
-  position: relative;
-  z-index: 2;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-size: 20px;
+    line-height: 49px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .mySkillsdark .learningIcon,
 .mySkillslight .learningIcon {
-  position: absolute;
-  max-width: 200px;
-  height: auto;
-  bottom: 5%;
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    bottom: 5%;
 }
 
 @media screen and (max-width: 860px) {
-  .mySkillsdark .learningIcon,
-  .mySkillslight .learningIcon {
-    display: none;
-  }
+    .mySkillsdark .learningIcon,
+    .mySkillslight .learningIcon {
+        display: none;
+    }
 }
+
+
 /*# sourceMappingURL=Skills.css.map */

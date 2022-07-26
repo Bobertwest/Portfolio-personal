@@ -1,43 +1,45 @@
-@import url(d:\Users\rober\OneDrive\Documentos\Cursos de programacion\Curso React\Portfolio\portfolio\src\index.css);
+@import url("../../index.css");
 .responsivelight,
 .responsivedark {
-  position: fixed;
-  top: 56px;
-  right: 0;
-  width: 100%;
-  height: 100vh;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 .responsivelight .list-responsive,
 .responsivedark .list-responsive {
-  height: 80%;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+    height: 80%;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .responsivelight .list-responsive .list-item-responsive .btn-nav,
 .responsivedark .list-responsive .list-item-responsive .btn-nav {
-  width: 100%;
-  padding: 2% 0;
+    width: 100%;
+    padding: 2% 0;
 }
 
 .responsivelight {
-  background-color: var(--light-button);
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    background-color: var(--light-button);
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
 
 .responsivedark {
-  background-color: var(--dark-background-primary);
-  -webkit-transition: var(--transition-effect);
-  transition: var(--transition-effect);
+    background-color: var(--dark-background-primary);
+    -webkit-transition: var(--transition-effect);
+    transition: var(--transition-effect);
 }
+
+
 /*# sourceMappingURL=MenuResponisve.css.map */
